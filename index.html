@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Simple Portfolio</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<header>
 		<div id="personal-details">
 			<h1>Irel Kian C. Bacolod</h1>
-			<p><img src="/assets/mail.svg" alt="" srcset="">kianirel56@gmail.com</p>
-			<p><img src="/assets/phone.svg" alt="" srcset="">+63 9327893355</p>
+			<p><img src="/assets/mail.svg" alt="" srcset="">keenToT@gmail.com</p>
+			<p><img src="/assets/phone.svg" alt="" srcset="">+63 934512453314</p>
 		</div>
 		<nav>
 			<a href="#about-me">About Me</a>
@@ -28,28 +30,122 @@
 			</figure>
 			<div class="about-details">
 				<h1 class="greetings">Hello, I'm Irel Kian! <img src="/assets/wave-right.svg" alt="" srcset=""></h1>
-				<p>I am aspiring backend developer with 1 year experience on frontend development in 8box Solutions. I have worked on my internship on application layer and when I got absorbed by the company, I primarily worked on presentation layer. My actual job is to connect the application layer to presentation layer using REST APIs. Furthermore, the role I really wanted to take is on backend development since I do feel more inclined on making the application layer</p>
+				<p>I am aspiring backend developer with 1 year experience on frontend development in My Company Solutions. I
+					have worked on my internship on application layer and when I got absorbed by the company, I
+					primarily worked on presentation layer. My actual job is to connect the application layer to
+					presentation layer using REST APIs. Furthermore, the role I really wanted to take is on backend
+					development since I do feel more inclined on making the application layer</p>
 			</div>
 		</section>
 		<section id="skills">
 			<h1 class="section-heading">Skills</h1>
 			<ul class="skills-card">
 				<li>
-					
+					<img src="assets/html5.svg" alt="">
 					HTML
-					<span>2 years Experience</span>
+					<span>2 years experience</span>
 				</li>
-				<li>Javascript</li>
-				<li>React</li>
-				<li>PostgreSQL</li>
-				<li>Nodejs</li>
-				<li>Nestjs</li>
-				<li>MySQL</li>
-				<li>TailwindCss</li>
-				<li>CSS</li>
+				<li>
+					<img src="assets/javascript-icon.svg" alt="">
+					JavaScript
+					<span>2 years experience</span>
+				</li>
+				<li>
+					<img src="assets/css.svg" alt="">
+					CSS
+					<span>2 year experience</span>
+				</li>
+				<li>
+					<img src="assets/reactjs-icon.svg" alt="">
+					React
+					<span>1.5 year experience</span>
+				</li>
+				<li>
+					<img src="assets/postgresql-icon.svg" alt="">
+					PostgreSQL
+					<span>4 months experience</span>
+				</li>
+				<li>
+					<img src="assets/nodejs-icon.svg" alt="">
+					Nodejs
+					<span>1 year experience</span>
+				</li>
+				<li>
+					<img src="assets/nestjs-icon.svg" alt="">
+					NestJs
+					<span>4 months experience</span>
+				</li>
+				<li>
+					<img src="assets/mysql-icon.svg" alt="">
+					MySQL
+					<span>1 year experience</span>
+				</li>
+				<li>
+					<img src="assets/tailwindcss-icon.svg" alt="">
+					Tailwind
+					<span>6 months experience</span>
+				</li>
+				
 			</ul>
+		</section>
+		<section id="projects">
+			<h1 class="projects-heading">Projects</h1>
+			<ul class="projects-container">
+				<li>
+					Innovex
+					<div class="project-description">
+						<p>It was developed using HTML, CSS, JS along with Nodejs in MVC architecture. This was my first project where I worked as a backend developer using ExpressJS and MYSQL with server like APACHE</p>
+						<span></span>
+					</div>
+				</li>
+				<li>
+					Buildhub
+					<div class="project-description">
+						<p>It is a e-commerce website developed using ReactJs for presentation layer and Nodejs for Application Layer. I worked here as front-end developer and integrates API for the website dynamic functionality</p>
+						<span></span>
+					</div>
+				</li>
+				<li>
+					JCI Election
+					<div class="project-description">
+						<p>This is a company election system made with ReactJs and Nodejs. I worked as front-end developer for this system where I also integrate the REST API made by our backend developer. The system used tanstack query for improved caching and controlling of data in client side which makes it more efficient</p>
+						<span></span>
+					</div>
+				</li>
+				<li>
+					DormFinder PH
+					<div class="project-description">
+						<p>This is a final project and requirement in my electives where my role is a backend developer. The system uses Supabase for ready deployed API. Furthermore, it was partnered by PostgreSQL database</p>
+						<span></span>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<section id="recommendations">
+			<h1 class="recommendations-heading">Recommendations</h1>
+			<ul class="recommendations-container">
+				<li>
+					Why? Tailwind CSS offers a utility-first approach to styling, allowing you to rapidly build custom designs without having to leave your HTML. It's highly customizable and can significantly reduce the amount of custom CSS you need to write. Tailwind also integrates well with popular frameworks like React, Vue, and Next.js.
+				</li>
+				<li>
+					Why? Next.js is a powerful React framework that enables server-side rendering (SSR) and static site generation (SSG). It improves performance, SEO, and user experience by allowing pages to be pre-rendered at build time or on each request.
+				</li>
+				<li>
+					Why? Vite is a next-generation front-end build tool that provides fast development server startup and instant hot module replacement (HMR). It's particularly well-suited for modern JavaScript frameworks like Vue and React, and it outperforms traditional tools like Webpack in terms of build speed.
+				</li>
+			</ul>
+			<form class="leave-recom_container">
+				<h3>Leave Recommendations</h3>
+				<input placeholder="Name (Optional)" type="text" id="name">
+				<textarea id="message" placeholder="Message"></textarea>
+				<button type="submit" id="submit-recom">
+					Submit
+				</button>
+			</form>
+
 		</section>
 	</main>
 	<script src="script.js"></script>
 </body>
+
 </html>

@@ -2,7 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	color: grey;
+	color: rgb(187, 187, 187);
+	background-color: rgb(32, 32, 32);
 }
 
 h1 {
@@ -18,7 +19,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: top;
-	background-color: rgb(128, 26, 187);
+	background-color: rgb(233, 112, 229);
 	color: white;
 	padding: 3rem 3rem 1rem;
 }
@@ -57,24 +58,25 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 2rem;
 	gap: 3rem;
+}
+
+#about-me, #skills, #projects, #recommendations {
+	padding: 1.3rem;
 }
 
 .greetings {
 	font-size: 3rem;
 }
 
-.greetings, .section-heading {
-	color: rgb(128, 26, 187);
+.greetings, .section-heading, .projects-heading, .recommendations-heading {
+	color: rgb(233, 112, 229);
 	font-weight: bolder;
 }
 
-.section-heading {
+.section-heading, .projects-heading, .recommendations-heading {
 	font-size: 2.5rem;
 }
-
-
 
 .about-details {
 	width: 60%;
@@ -99,7 +101,6 @@ figure {
 .skills-card {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	color: black;
 	gap: 5rem;
 	font-size: 0.8rem;
 }
@@ -109,6 +110,7 @@ figure {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 1rem;
 	padding: 2rem;
 	border-radius: 0.5rem;
 	border: 2px solid grey;
@@ -116,8 +118,86 @@ figure {
 }
 
 .skills-card li span {
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: bold;
 }
 
+.projects-container {
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	font-weight: bolder;
+}
 
+.project-description {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: lighter;
+}
+
+.project-description span {
+	border: 1px solid grey;
+	width: 75%;
+}
+
+.project-description p {
+	width: 90%;
+}
+
+.projects-container p {
+	font-size: 1rem;
+}
+
+
+.recommendations-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+}
+
+.recommendations-container li {
+	border: 1px solid grey;
+	padding: 2rem;
+	box-shadow: 3px 3px 8px rgba(255, 255, 255, 0.2);
+}
+
+.leave-recom_container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5rem;
+	gap: 1rem;
+}
+
+.leave-recom_container h3 {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.leave-recom_container input, .leave-recom_container textarea {
+	width: 50%;
+	background-color: inherit;
+	border: 1px solid grey;
+	color: inherit;
+	padding: 0.5rem 1rem;
+}
+
+#message {
+	height: 200px;
+	text-align: left;
+	vertical-align: top;
+}
+
+#submit-recom {
+	padding: 0.5rem 3rem;
+	border-radius: 0.5rem;
+	background-color: inherit;
+	color: inherit;
+	border: 1px solid rgb(233, 112, 229);
+}
