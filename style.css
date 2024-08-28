@@ -211,7 +211,7 @@ figure {
 	vertical-align: top;
 }
 
-#submit-recom {
+#submit-recom, .confirmButton {
 	padding: 0.5rem 3rem;
 	border-radius: 0.5rem;
 	background-color: inherit;
@@ -236,3 +236,18 @@ figure {
 	right: 0;
   }
   
+
+  .modal {
+	background-color: rgb(182, 96, 179);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Center the element */
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;
+	border-radius: 0.5rem;
+  }
