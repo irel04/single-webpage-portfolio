@@ -1,12 +1,17 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: grey;
 }
 
 h1 {
 	padding: 0;
 	margin: 0;
+}
+
+li {
+	list-style: none;
 }
 
 header {
@@ -15,7 +20,7 @@ header {
 	align-items: top;
 	background-color: rgb(128, 26, 187);
 	color: white;
-	padding: 3rem 1.5rem 1rem;
+	padding: 3rem 3rem 1rem;
 }
 
 #personal-details {
@@ -24,7 +29,7 @@ header {
 	gap: 0.5rem;
 }
 
-#personal-details p {
+#personal-details p, .greetings {
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -36,9 +41,83 @@ nav {
 	display: flex;
 	gap: 3rem;
 	font-size: 1.2rem;
-	font-weight: 530;
+	font-weight: 500;
 }
 
-nav li {
-	list-style: none;
+nav a {
+	text-decoration: none;
+	color: inherit;
 }
+
+main {
+	padding: 3rem;
+}
+
+#about-me {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	gap: 3rem;
+}
+
+.greetings {
+	font-size: 3rem;
+}
+
+.greetings, .section-heading {
+	color: rgb(128, 26, 187);
+	font-weight: bolder;
+}
+
+.section-heading {
+	font-size: 2.5rem;
+}
+
+
+
+.about-details {
+	width: 60%;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	
+}
+
+#software-engineer_icon {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1/1;
+}
+
+
+.skills-card {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	color: black;
+	gap: 5rem;
+	font-size: 0.8rem;
+}
+
+.skills-card li {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem;
+	border-radius: 0.5rem;
+	border: 2px solid grey;
+	box-shadow: 8px 10px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.skills-card li span {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+
